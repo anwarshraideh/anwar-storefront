@@ -27,14 +27,7 @@ const Products = props => {
 
                                 </CardActions>
 
-                                {/* <CardContent>Name : {product.name}</CardContent>
-                            <CardContent>Price : {product.price}$</CardContent>
-                            <CardContent>inventoryCount : {product.inventoryCount}</CardContent>
-
-                            <CardActions>
-                                <Button >ADD TO CART</Button>
-                                <Button >VIEW DETAILS</Button>
-                            </CardActions> */}
+                                
 
                             </Card>
                         </>
