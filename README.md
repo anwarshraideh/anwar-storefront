@@ -1,7 +1,7 @@
-#storefront
+storefront
 
 Author:Anwar Shraideh
 
 
-###Lab:Class 36
+Lab:Class 36
 ![uml]()
