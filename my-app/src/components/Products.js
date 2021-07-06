@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import { Card, CardContent, CardActions, Button } from "@material-ui/core";
+import { addToCart } from "../store/ProductsStore";
 
 const Products = props => {
 
@@ -22,7 +23,7 @@ const Products = props => {
 
                                 <CardActions>
 
-                                    <Button> ADD TO CART </Button>
+                                    <Button onClick={() => props.addToCart(p)}> ADD TO CART </Button>
                                     <Button> VIEW DETAILS </Button>
 
                                 </CardActions>
@@ -47,4 +48,6 @@ const mapStateToProps = (state) => ({
     productReducer: state.productReducer,
 });
 
-export default connect(mapStateToProps)(Products);
+const mapDispatchToProps = { addToCart };
+
+export default connect(mapStateToProps ,mapDispatchToProps )(Products);
